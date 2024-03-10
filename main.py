@@ -19,13 +19,17 @@ async def loadcogs():
 
 
 @bot.event
-async def on_event():
+async def on_ready():
+    slash_commands = await bot.tree.sync()
+    print("----------------------------=--------------------------")
     print("Jr Ritz is online!")
+    print(f"Synced commands = {len(slash_commands)}")
+    print("----------------------------=--------------------------")
 
 
 asyncio.run(loadcogs())
 
-handler = logging.FileHandler(filename=f"{datetime.date} | {datetime.time}",  mode="w", encoding="utf-8")
+handler = logging.FileHandler(filename=f"error.log",  mode="w", encoding="utf-8")
 
 
 bot.run(basicconfig.TOKEN, log_handler=handler)
