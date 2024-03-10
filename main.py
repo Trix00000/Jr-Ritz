@@ -7,7 +7,7 @@ from utils.config import basicconfig
 import datetime
 
 bot = commands.Bot(command_prefix=basicconfig.PREFIX, intents=discord.Intents.all())
-
+bot.help_command = None
 async def loadcogs():
     for file in os.listdir("./cogs"):
         if file.endswith(".py"):
