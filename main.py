@@ -27,6 +27,18 @@ async def on_ready():
     print("----------------------------=--------------------------")
 
 
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def reloadcog(ctx:commands.Context, cog:str):
+    """Reloads a specific module."""
+    try:
+        await bot.reload_extension(f"cogs.{cog}")
+        await ctx.send(f":white_check_mark: Successfully reloaded `{cog}`")
+    except Exception as e:
+        await ctx.send(e)
+
+
 asyncio.run(loadcogs())
 
 handler = logging.FileHandler(filename=f"error.log",  mode="w", encoding="utf-8")
