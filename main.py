@@ -38,6 +38,24 @@ async def reloadcog(ctx:commands.Context, cog:str):
     except Exception as e:
         await ctx.send(e)
 
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def loadcog(ctx:commands.Context, cog:str):
+    """Reloads a specific module."""
+    try:
+        await bot.load_extension(f"cogs.{cog}")
+        await ctx.send(f":white_check_mark: Successfully loaded `{cog}`")
+    except Exception as e:
+        await ctx.send(e)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def sync(ctx:commands.Context):
+    """Sync the command tree with discord"""
+    synced = await bot.tree.sync()
+    await ctx.reply(f"✅ Successfully synced  {len(synced)} commands.")
+
+
 
 asyncio.run(loadcogs())
 
