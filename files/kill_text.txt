@@ -1,0 +1,10 @@
+Did [Author] just kill [User]?
+[Author] has taken [User]'s life.
+[Author] ended [User]'s life.
+[User] is dead because of [Author].
+[Author] killed [User].
+[Author] is responsible for [User]'s death.
+[User] is no more, thanks to [Author].
+[Author] has caused [User]'s demise.
+[User] met their end at the hands of [Author].
+[Author] snuffed out [User]'s life.
