@@ -1,3 +1,4 @@
 .vscode
 error.log
 __pycache__/
+test.py
