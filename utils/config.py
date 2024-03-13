@@ -1,3 +1,3 @@
 class basicconfig:
-    TOKEN = "MTIxNTU5ODI0MTE4MjI1NzE1Mg.GrE7mF.AreshyhtK7VUj1N3Z8XZ7olW--qooC6FWUbkA4"
+    TOKEN = "MTIxNzU4MTczOTgzMzI5OTA1NA.GsXIWe.OMS2yyLx6zsBtbTvGizH6JuSX6qj5ptEZyJHNw"
     PREFIX = "!ritz "
