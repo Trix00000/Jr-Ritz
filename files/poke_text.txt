@@ -1,0 +1,10 @@
+[Author] pokes [User] lightly.
+[Author] playfully pokes [User].
+[User] feels [Author] poke them.
+[Author] gives [User] a poke.
+[User] receives a poke from [Author].
+[Author] lightly pokes [User].
+[Author] playfully taps [User].
+[User] feels a gentle poke from [Author].
+[Author] pokes [User] with a smile.
+[User] gets poked by [Author].
